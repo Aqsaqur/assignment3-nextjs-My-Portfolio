@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        color: rgb(173, 173, 242);
+        background-color:#3c3737;
+    }
+}
+
+@layer components {
+    .menuLink{
+        @apply cursor-pointer hover:text-[#acacc1];
+    }
+    .tags {
+        background-color: #acacc1;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+        padding: 3px 10px;
+        display: inline-block;
+        color: #221d1d;
+        font-size: 12px;
+    }
+
+    .tags:last-child {
+        margin-right: 0;
+
+    }
+    
+    .tags:nth-child(2) {
+        background-color: #dcb3ca;
+    }
+    .tags:nth-child(3) {
+        background-color: #cb5691;
+    }
+    .tags:nth-child(4) {
+        background-color: #dad1d6;
+    }
+}
